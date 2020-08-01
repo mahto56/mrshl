@@ -1,0 +1,26 @@
+# loglevel
+loglevel: info
+
+# max retries done if a process can't be found
+# for this to work pid_path must be specified
+max_retry: 100
+
+# time in seconds
+sleep_delay: 5
+
+# server to send metrics data to
+server_url: http://localhost:9200/test_index/logs
+
+
+# elasticsearch server to monitor
+es_url: http://localhost:9200
+
+
+# list of processes to monitor
+procs:
+    - pid: 368942
+      name: ELA
+      path: /haome/kayshu/projects/emoji.sh
+
+    - pid: 368942
+      name: ES
